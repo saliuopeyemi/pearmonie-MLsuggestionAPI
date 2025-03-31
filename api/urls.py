@@ -31,5 +31,5 @@ urlpatterns = [
             path("train/",views.TrainPredictorView.as_view(),name="Train-Predictor"),
 
             path("",include(router.urls)),
-            path("swagger/", schema_view.with_ui('swagger', cache_timeout=0), name="swagger_ui"),
+            path("doc/", schema_view.with_ui('swagger', cache_timeout=0), name="swagger_ui"),
         ]
